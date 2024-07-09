@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-while [[ "$1" != "" ]]; do
+while [[ -n "$1" ]]; do
     case "$1" in
         -q) shift 1; FIRST="$1" ;;
 	-w) shift 1; SECOND="$1" ;;
